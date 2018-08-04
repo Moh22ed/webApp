@@ -1,6 +1,21 @@
 <template>
   <div>
-<router-view />
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#Nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="Nav">
+      <div class="navbar-nav">
+
+        <a href="/" class="nav-item nav-link">Home</a>
+        <a href="/register" class="nav-item nav-link">Register</a>
+
+
+      </div>
+    </div>
+  </nav>
+<router-view/>
   </div>
 </template>
 
@@ -14,30 +29,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
